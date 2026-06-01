@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { JSX, useState } from "react";
 import * as ImagePicker from "expo-image-picker";
 
-import BasicButton from "components/BasicButton";
-import { InputWrapper, InputImage } from "components/BasicImageInput/styles";
-import i18n from "config/i18n";
-import AddPhotoSourceModal from "modals/AddPhotoSource";
+import BasicButton from "../../components/BasicButton";
+import { InputWrapper, InputImage } from "../../components/BasicImageInput/styles";
+import i18n from "../../config/i18n";
+import AddPhotoSourceModal from "../../modals/AddPhotoSource";
 
 interface Props {
     buttonText: string;

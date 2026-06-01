@@ -10,12 +10,12 @@ export const ButtonWrapper = styled.TouchableOpacity<{
     paddingHorizontal: 10px;
     border-radius: 10px;
     background-color: ${({ theme }) => theme.backgroundLight};
-    border: ${(props) =>
+    border: ${(props: { warning: any; theme: { warning: any; primary: any; neutral: any; }; important: any; }) =>
         props.warning
             ? `1px solid ${props.theme.warning}`
             : props.important
-            ? `1px solid ${props.theme.primary}`
-            : `1px solid ${props.theme.neutral}`};
+                ? `1px solid ${props.theme.primary}`
+                : `1px solid ${props.theme.neutral}`};
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,11 +29,11 @@ export const ButtonText = styled.Text<{
 }>`
     font-family: "Inter_300Light";
     font-size: 18px;
-    color: ${(props) =>
+    color: ${(props: { warning: any; theme: { warning: any; primary: any; text: any; }; important: any; }) =>
         props.warning
             ? props.theme.warning
             : props.important
-            ? props.theme.primary
-            : props.theme.text};
-    opacity: ${(props) => (props.disabled ? 0.2 : 1)};
+                ? props.theme.primary
+                : props.theme.text};
+    opacity: ${(props: { disabled: any; }) => (props.disabled ? 0.2 : 1)};
 `;

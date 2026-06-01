@@ -1,7 +1,7 @@
 import React from "react";
 import Sentry from "@sentry/react-native";
-import { Description, SmallHeader } from "styles/shared";
-import i18n from "config/i18n";
+import { Description, SmallHeader } from "../../styles/shared";
+import i18n from "../../config/i18n";
 import { ExplosionImage, Wrapper } from "./styles";
 
 interface Props {

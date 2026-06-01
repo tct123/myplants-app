@@ -1,12 +1,12 @@
-import React from "react";
+import React, { JSX } from "react";
 import {
   ErrorToast,
   InfoToast,
   SuccessToast,
   ToastProps,
 } from "react-native-toast-message";
-import { useAppConfigStore } from "store/index";
-import { darkTheme, lightTheme } from "styles/theme";
+import { useAppConfigStore } from "../../store/index";
+import { darkTheme, lightTheme } from "../../styles/theme";
 
 export const Info = (props: ToastProps): JSX.Element => {
   const appTheme = useAppConfigStore.persistent((state) => state.theme);

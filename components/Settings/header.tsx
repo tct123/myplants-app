@@ -1,5 +1,5 @@
-import React from "react";
-import { HeaderWrapper, HeaderText } from "components/Settings/styles";
+import React, { JSX } from "react";
+import { HeaderWrapper, HeaderText } from "../../components/Settings/styles";
 
 interface Props {
     text: string;

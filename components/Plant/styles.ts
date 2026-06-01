@@ -1,6 +1,5 @@
-import styled from "styled-components/native";
-
-import { screenWidth } from "styles/shared";
+import styled from 'styled-components/native'
+import { screenWidth } from "../../styles/shared";
 
 const MAX_PLANT_WIDTH = 240;
 
@@ -16,11 +15,10 @@ export const Container = styled.View`
 export const Wrapper = styled.View<{
     showWateringReminder?: boolean;
 }>`
-    border: ${(props) =>
-        `2px solid ${
-            props.showWateringReminder
-                ? props.theme.primary
-                : props.theme.neutral
+    border: ${(props: { showWateringReminder: any; theme: { primary: any; neutral: any; }; }) =>
+        `2px solid ${props.showWateringReminder
+            ? props.theme.primary
+            : props.theme.neutral
         }`};
     height: 100%;
     position: relative;

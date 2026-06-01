@@ -7,30 +7,30 @@ import {
   Inter_300Light,
 } from "@expo-google-fonts/inter";
 import { AkayaKanadaka_400Regular } from "@expo-google-fonts/akaya-kanadaka";
-import * as Sentry from "sentry-expo";
+import * as Sentry from "@sentry/react-native";
 import { ThemeProvider } from "styled-components/native";
 import * as Notifications from "expo-notifications";
-import { sentryDsn } from "config/environment";
-import StatusBar from "components/StatusBar";
-import ErrorBoundary from "components/ErrorBoundary";
-import { RootStackParamList } from "interfaces";
-import HomeScreen from "screens/home";
-import AddPlantScreen from "screens/plants/add";
-import EditPlantScreen from "screens/plants/edit";
-import PlantHistoryScreen from "screens/plants/history";
-import SettingsScreen from "screens/settings";
-import ImportPlantScreen from "screens/plants/import";
-import SettingsNotificationsScreen from "screens/settings/notifications";
-import SettingsAppScreen from "screens/settings/app";
-import SettingsContactReportBug from "screens/settings/contact/reportBug";
-import { darkTheme, lightTheme } from "styles/theme";
-import { useAppConfigStore } from "store";
-import "config/i18n";
+import { sentryDsn } from "./config/environment";
+import StatusBar from "./components/StatusBar";
+import ErrorBoundary from "./components/ErrorBoundary";
+import { RootStackParamList } from "./interfaces";
+import HomeScreen from "./screens/home";
+import AddPlantScreen from "./screens/plants/add";
+import EditPlantScreen from "./screens/plants/edit";
+import PlantHistoryScreen from "./screens/plants/history";
+import SettingsScreen from "./screens/settings";
+import ImportPlantScreen from "./screens/plants/import";
+import SettingsNotificationsScreen from "./screens/settings/notifications";
+import SettingsAppScreen from "./screens/settings/app";
+import SettingsContactReportBug from "./screens/settings/contact/reportBug";
+import { darkTheme, lightTheme } from "./styles/theme";
+import { useAppConfigStore } from "./store";
+import "./config/i18n";
 import {
   Success as SuccessToast,
   Error as ErrorToast,
   Info as InfoToast,
-} from "components/Toast";
+} from "./components/Toast";
 
 Sentry.init({
   dsn: sentryDsn,

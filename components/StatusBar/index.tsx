@@ -1,6 +1,6 @@
-import React from "react";
+import React, { JSX } from "react";
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
-import { useAppConfigStore } from "store";
+import { useAppConfigStore } from "../../store";
 import { Wrapper } from "./styles";
 
 const StatusBar = (): JSX.Element => {

@@ -1,17 +1,17 @@
-import React, { ReactElement, useState } from "react";
+import React, { JSX, ReactElement, useState } from "react";
 import { AnimatePresence, MotiView } from "moti";
 import { MaterialIcons, Feather, Entypo, AntDesign } from "@expo/vector-icons";
 import { useTheme } from "styled-components/native";
-import { IconWrapper } from "components/HomeSettings/styles";
-import { Navigation } from "interfaces";
-import { DarkScreenOverlay, ModalAnimationWrapper } from "styles/shared";
-import { ICON_SIZE_PX } from "config";
-import { useModalsStore, usePlantsPersistentStore } from "store";
+import { IconWrapper } from "../../components/HomeSettings/styles";
+import { Navigation } from "../../interfaces";
+import { DarkScreenOverlay, ModalAnimationWrapper } from "../../styles/shared";
+import { ICON_SIZE_PX } from "../../config";
+import { useModalsStore, usePlantsPersistentStore } from "../../store";
 
 const ITEMS_MARGIN_PX = 60;
 const ITEMS_OFFSET_PX = 20;
 
-interface Props extends Navigation {}
+interface Props extends Navigation { }
 
 interface SettingsItem {
     name: string;

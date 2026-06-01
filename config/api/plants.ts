@@ -1,6 +1,6 @@
 import axios from "axios";
-import { apiUrl } from "config/environment";
-import { getDeviceId } from "utils/device";
+import { apiUrl } from "../../config/environment";
+import { getDeviceId } from "../../utils/device";
 
 const plantsApi = axios.create({
   baseURL: apiUrl,

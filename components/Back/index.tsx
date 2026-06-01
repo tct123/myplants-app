@@ -3,10 +3,10 @@ import { MaterialIcons } from "@expo/vector-icons";
 import { useTheme } from "styled-components/native";
 
 import { IconWrapper } from "./styles";
-import { ICON_SIZE_PX } from "config";
-import { Navigation } from "interfaces";
+import { ICON_SIZE_PX } from "../../config";
+import { Navigation } from "../../interfaces";
 
-interface Props extends Navigation {}
+interface Props extends Navigation { }
 
 const Back = ({ navigation }: Props): JSX.Element => {
   const theme = useTheme();

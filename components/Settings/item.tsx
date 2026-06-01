@@ -1,6 +1,6 @@
-import React, { ReactElement } from "react";
+import React, { JSX, ReactElement } from "react";
 
-import { ItemWrapper } from "components/Settings/styles";
+import { ItemWrapper } from "../../components/Settings/styles";
 
 export interface Props {
     children: ReactElement;

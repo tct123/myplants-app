@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { JSX, useState } from "react";
 import * as Clipboard from "expo-clipboard";
-import i18n from "config/i18n";
+import i18n from "../../config/i18n";
 import {
     ButtonWrapper,
     FieldContainer,

@@ -1,5 +1,5 @@
 import styled from "styled-components/native";
 
 export const Wrapper = styled.View<{ topMargin?: boolean }>`
-    margin-top: ${(props) => (props.topMargin ? `100px` : `0`)};
+    margin-top: ${(props: { topMargin: any; }) => (props.topMargin ? `100px` : `0`)};
 `;

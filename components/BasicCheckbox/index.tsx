@@ -1,4 +1,4 @@
-import React from "react";
+import React, { JSX } from "react";
 import Checkbox from "expo-checkbox";
 
 import { Container, CheckboxLabel } from "./styles";

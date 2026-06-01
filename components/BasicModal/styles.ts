@@ -46,7 +46,7 @@ export const ModalDescription = styled.Text<{
     opacity: 0.6;
     margin-top: 10px;
     color: ${({ theme }) => theme.text};
-    text-align: ${(props) => (props.textCenter ? "center" : "left")};
+    text-align: ${(props: { textCenter: any; }) => (props.textCenter ? "center" : "left")};
 `;
 
 export const ModalImage = styled.Image`

@@ -1,7 +1,7 @@
-import React from "react";
+import React, { JSX } from "react";
 import { ActivityIndicator } from "react-native";
 
-import { useAppConfigStore } from "store";
+import { useAppConfigStore } from "../../store";
 import { Wrapper } from "./styles";
 
 interface Props {

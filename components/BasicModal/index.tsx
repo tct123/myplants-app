@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import React, { JSX, ReactElement } from "react";
 import { Modal } from "react-native";
 
 import { ModalWrapper, ModalContainer, ModalBackground } from "./styles";

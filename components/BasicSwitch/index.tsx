@@ -1,6 +1,6 @@
-import React from "react";
+import React, { JSX } from "react";
 import { TouchableOpacity } from "react-native";
-import { SmallHeader } from "styles/shared";
+import { SmallHeader } from "../../styles/shared";
 import { Container, PartWrapper, Wrapper, ItemText } from "./styles";
 
 interface Props {

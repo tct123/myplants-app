@@ -1,4 +1,4 @@
-import React from "react";
+import React, { JSX } from "react";
 import { Platform } from "react-native";
 import { AnimatePresence } from "moti";
 import { useTheme } from "styled-components/native";
@@ -57,9 +57,9 @@ const BasicTextInput = ({
                 style={
                     Platform.OS === "ios" && textarea
                         ? {
-                              height:
-                                  TEXTAREA_NUMBER_OF_LINES * IOS_LINE_HEIGHT_PX,
-                          }
+                            height:
+                                TEXTAREA_NUMBER_OF_LINES * IOS_LINE_HEIGHT_PX,
+                        }
                         : null
                 }
                 placeholderTextColor={theme.textLight}

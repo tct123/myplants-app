@@ -15,7 +15,7 @@ export const Input = styled.TextInput<{ errorBorder: boolean }>`
     font-size: 20px;
     border-radius: 5px;
     font-family: "Inter_200ExtraLight";
-    border: ${(props) =>
+    border: ${(props: { errorBorder: any; theme: { warning: any; neutral: any; }; }) =>
         props.errorBorder
             ? `1px solid ${props.theme.warning}`
             : `1px solid ${props.theme.neutral}`};

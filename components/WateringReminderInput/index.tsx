@@ -1,7 +1,7 @@
-import React from "react";
+import React, { JSX } from "react";
 import { AnimatePresence } from "moti";
-import { ErrorWrapper, ErrorText } from "components/BasicTextInput/styles";
-import i18n from "config/i18n";
+import { ErrorWrapper, ErrorText } from "../../components/BasicTextInput/styles";
+import i18n from "../../config/i18n";
 import { Container, Wrapper, Input, Text, ErrorContainer } from "./styles";
 
 interface Props {
@@ -29,7 +29,7 @@ const WateringReminderInput = ({
                     maxLength={2}
                 />
                 <Text>
-                    {numberValue == 1
+                    {numberValue === 1
                         ? t("components.wateringReminderInput.daySingular")
                         : t("components.wateringReminderInput.dayPlurar")}
                 </Text>
